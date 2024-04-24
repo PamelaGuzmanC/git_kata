@@ -1,7 +1,8 @@
+
+
 import pandas as pd
-def load_titanic_female():
+
+def load_titanic_male():
     df = pd.read_csv('data/titanic.csv')
-    print(df.columns)
-    print(df["sex"].unique())
-    female_df = df[df["sex"]=="male"]
-    return female_df
+    male_df = df[df["sex"] == "male"]
+    return male_df
