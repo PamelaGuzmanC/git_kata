@@ -1,4 +1,5 @@
 import pandas as pd
+
 def load_titanic_female():
     df = pd.read_csv('data/titanic.csv')
     print(df.columns)
